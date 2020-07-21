@@ -1,0 +1,83 @@
+:root {
+  --myApp-global--spacer--md: 30px;
+}
+
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--myApp-global--spacer--md);
+}
+
+.notification-container {
+  flex: 0 1 auto;
+}
+
+.app-page {
+  height: 100vh;
+}
+
+.app-page-section-border-bottom {
+  border-bottom: 1px solid var(--pf-global--BorderColor--100);
+}
+
+.app-page-section-breadcrumb {
+  padding-bottom: 0;
+}
+
+.app-page-section-height {
+  height: 100vh;
+}
+
+.app-api-title {
+  color: var(--pf-global--primary-color--100);
+}
+
+.app-api-description {
+  padding-top: calc(var(--pf-global--spacer--xs)/2);
+  font-size: var(--pf-global--FontSize--sm);
+}
+
+.app-api-tag-group {
+  padding-top: var(--pf-global--spacer--md);
+}
+
+.app-api-tag-group > *:not(:last-child) {
+  margin-right: var(--pf-global--spacer--sm);
+}
+
+
+.pf-m-selected {
+  color: var(--pf-global--active-color--100) !important;
+}
+
+.app-button-group-sm > *:not(:last-child) {
+  margin-right: var(--pf-global--spacer--sm); /* remove this when action group is added or we use utility classes */
+}
+
+.app-button-group-md > *:not(:last-child) {
+  margin-right: var(--pf-global--spacer--md); /* remove this when action group is added or we use utility classes */
+}
+
+.app-toolbar-api-total {
+  font-size: var(--pf-global--FontSize--sm);
+  color: var(--pf-global--Color--100);
+}
+
+.app-import-api-split-layout > .pf-l-split__item {
+  width: 50%;
+  margin-right: var(--pf-global--spacer--xl);
+}
+
+.app-empty-state > a > .pf-c-button.pf-m-primary, .app-empty-state .pf-c-empty-state__primary {
+  margin-top: var(--pf-c-empty-state--c-button--MarginTop);
+}
+
+.pf-c-drawer__content {
+  background-color: unset;
+}
+
+.app-drawer-drawer {
+  display: flex;
+  flex-direction: row;
+}
